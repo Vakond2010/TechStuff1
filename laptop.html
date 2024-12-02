@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irodai Laptop - Webshop</title>
+    <link rel="stylesheet" href="laptop.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Irodai Laptop Webshop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Főoldal</a></li>
+                <li><a href="#">Termékek</a></li>
+                <li><a href="#">Rólunk</a></li>
+                <li><a href="#">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content: Laptop termék oldal -->
+    <main>
+        <div class="product-detail-container">
+            <div class="product-image">
+                <img src="laptop_image.jpg" alt="Irodai Laptop">
+            </div>
+
+            <div class="product-info">
+                <h2>Irodai Laptop - Model XYZ</h2>
+                <p class="price">199,990 Ft</p>
+
+                <!-- Specifikációk -->
+                <div class="specs">
+                    <h3>Specifikációk</h3>
+                    <ul>
+                        <li><strong>Processzor:</strong> Intel Core i5-1135G7</li>
+                        <li><strong>RAM:</strong> <span id="ram-value">8 GB</span></li>
+                        <li><strong>Tároló:</strong> 512 GB SSD</li>
+                        <li><strong>Kijelző:</strong> 15.6” Full HD (1920x1080)</li>
+                        <li><strong>Szín:</strong> <span id="color-value">Fekete</span></li>
+                        <li><strong>Operációs rendszer:</strong> Windows 11 Pro</li>
+                    </ul>
+                </div>
+
+                <!-- Opciók -->
+                <div class="options">
+                    <h3>Válassz RAM méretet:</h3>
+                    <select id="ram-selector">
+                        <option value="8gb">8 GB</option>
+                        <option value="16gb">16 GB</option>
+                        <option value="32gb">32 GB</option>
+                    </select>
+
+                    <h3>Válassz színt:</h3>
+                    <select id="color-selector">
+                        <option value="black">Fekete</option>
+                        <option value="silver">Ezüst</option>
+                        <option value="grey">Szürke</option>
+                    </select>
+
+                    <button id="add-to-cart-btn" class="btn">Kosárba</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Kosár Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h3>Kosár</h3>
+            <p>Termék hozzáadva: <span id="cart-item"></span></p>
+            <button id="close-modal-btn" class="btn">Bezár</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Irodai Laptop Webshop. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="laptop.js"></script>
+</body>
+</html>
